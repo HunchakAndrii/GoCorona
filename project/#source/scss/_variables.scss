@@ -1,0 +1,55 @@
+@mixin font-face($font-family, $font-name, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $font-family;
+    src:
+      url("/fonts/" + $font-family + "/" + $font-name + ".woff2") format("woff2"),
+      url("/fonts/" + $font-family + "/" + $font-name + ".woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+  }
+}
+
+
+$color1: #EC5863;
+$color2: #4285F4;
+
+
+
+.main__title {
+  color: #000;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 126%; 
+}
+
+.main__text {
+  color: #616161;
+  font-variant-numeric: lining-nums proportional-nums;
+  font-family: Rubik;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 138.5%; 
+  letter-spacing: 0.96px;
+  margin: 12px 0px 24px 0px;
+}
+
+.main__button {
+  border-radius: 5%;
+  background-color: $color1;
+  padding: 14px 29px;
+  color: #FCFDFE;
+  font-family: Raleway;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: 1.4px;
+  &:hover{
+    background-color: $color2;
+    transition: 0.4s;
+  }
+}

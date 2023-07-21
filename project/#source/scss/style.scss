@@ -1,0 +1,13 @@
+@import "_variables.scss";
+@import "_nullstyle.scss";
+
+@include font-face("Rubik", "Rubik-Bold", 700);
+@include font-face("Rubik", "Rubik-Regular", 400);
+
+@include font-face("Raleway", "Raleway-Bold", 700);
+@include font-face("Raleway", "Raleway-ExtraBold", 800);
+
+@import "_section__one.scss";
+@import "_section__two.scss";
+@import "_section__three.scss";
+@import "_section__four.scss";
